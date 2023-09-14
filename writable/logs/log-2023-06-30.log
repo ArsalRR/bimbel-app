@@ -1,0 +1,54 @@
+CRITICAL - 2023-06-30 17:39:32 --> Trying to access array offset on value of type null
+in APPPATH\Views\kategori\formedit.php on line 9.
+ 1 APPPATH\Views\kategori\formedit.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\kategori\\formedit.php', 9)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kategori\\formedit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kategori/formedit', [], true)
+ 5 APPPATH\Controllers\Admin.php(143): view('kategori/formedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->formedit('14')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-30 17:40:19 --> Too few arguments to function App\Controllers\Admin::formedit(), 0 passed in C:\Users\10\Desktop\LandingPage\Bimbel-app\system\CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH\Controllers\Admin.php on line 135.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->formedit()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-30 17:41:07 --> Too few arguments to function App\Controllers\Admin::formedit(), 0 passed in C:\Users\10\Desktop\LandingPage\Bimbel-app\system\CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH\Controllers\Admin.php on line 135.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->formedit()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-30 17:43:09 --> url_title(): Argument #1 ($str) must be of type string, null given, called in C:\Users\10\Desktop\LandingPage\Bimbel-app\app\Controllers\Admin.php on line 119
+in SYSTEMPATH\Helpers\url_helper.php on line 476.
+ 1 APPPATH\Controllers\Admin.php(119): url_title(null, '-', true)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->update('14')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-30 17:43:24 --> url_title(): Argument #1 ($str) must be of type string, null given, called in C:\Users\10\Desktop\LandingPage\Bimbel-app\app\Controllers\Admin.php on line 119
+in SYSTEMPATH\Helpers\url_helper.php on line 476.
+ 1 APPPATH\Controllers\Admin.php(119): url_title(null, '-', true)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->update('14')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-30 17:46:00 --> Trying to access array offset on value of type null
+in APPPATH\Views\kategori\formedit.php on line 9.
+ 1 APPPATH\Views\kategori\formedit.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\kategori\\formedit.php', 9)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kategori\\formedit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kategori/formedit', [], true)
+ 5 APPPATH\Controllers\Admin.php(143): view('kategori/formedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->formedit('jihan-zaalfa')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

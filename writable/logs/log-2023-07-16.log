@@ -1,0 +1,374 @@
+ERROR - 2023-07-16 00:12:33 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-07-16 00:12:33 --> 220 smtp.gmail.com ESMTP az3-20020a170902a58300b001b889df671bsm10194103plb.297 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [36.71.82.42]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [36.71.82.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK az3-20020a170902a58300b001b889df671bsm10194103plb.297 - gsmtp
+
+to: 555 5.5.2 Syntax error. az3-20020a170902a58300b001b889df671bsm10194103plb.297 - gsmtp
+
+The following SMTP error was encountered: 555 5.5.2 Syntax error. az3-20020a170902a58300b001b889df671bsm10194103plb.297 - gsmtp
+
+quit: 221 2.0.0 closing connection az3-20020a170902a58300b001b889df671bsm10194103plb.297 - gsmtp
+
+ERROR - 2023-07-16 00:13:49 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-07-16 00:13:49 --> 220 smtp.gmail.com ESMTP u5-20020a62ed05000000b00668821499c3sm9486423pfh.156 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [36.71.82.42]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [36.71.82.42]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK u5-20020a62ed05000000b00668821499c3sm9486423pfh.156 - gsmtp
+
+to: 555 5.5.2 Syntax error. u5-20020a62ed05000000b00668821499c3sm9486423pfh.156 - gsmtp
+
+The following SMTP error was encountered: 555 5.5.2 Syntax error. u5-20020a62ed05000000b00668821499c3sm9486423pfh.156 - gsmtp
+
+quit: 221 2.0.0 closing connection u5-20020a62ed05000000b00668821499c3sm9486423pfh.156 - gsmtp
+
+CRITICAL - 2023-07-16 01:22:08 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\Admin.php(93): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\uploads', '1689488528_7d416fffc6955889b561')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->simpan()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-16 01:26:39 --> Call to a member function getRandomName() on null
+in APPPATH\Controllers\Admin.php on line 91.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->simpan()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-16 01:27:28 --> Trying to access array offset on value of type null
+in APPPATH\Views\kategori\formemail.php on line 7.
+ 1 APPPATH\Views\kategori\formemail.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\kategori\\formemail.php', 7)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kategori\\formemail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kategori/formemail', [], true)
+ 5 APPPATH\Controllers\Admin.php(123): view('kategori/formemail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->formemail('hanif')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-16 16:51:16 --> Undefined variable $snapToken
+in APPPATH\Views\User\index.php on line 526.
+ 1 APPPATH\Views\User\index.php(526): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $snapToken', 'APPPATH\\Views\\User\\index.php', 526)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\User\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('User/index', [], true)
+ 5 APPPATH\Controllers\User.php(11): view('User/index')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-16 17:17:51 --> CURL Error: Could not resolve host: app.sandbox.midtrans.com
+in VENDORPATH\midtrans\midtrans-php\Midtrans\ApiRequestor.php on line 156.
+ 1 VENDORPATH\midtrans\midtrans-php\Midtrans\ApiRequestor.php(39): Midtrans\ApiRequestor::remoteCall('https://app.sandbox.midtrans.com/snap/v1/transactions', 'SB-Mid-server-mF31tGVbgY3Tge0OipQEfJz2', [...], 'POST')
+ 2 VENDORPATH\midtrans\midtrans-php\Midtrans\Snap.php(109): Midtrans\ApiRequestor::post('https://app.sandbox.midtrans.com/snap/v1/transactions', 'SB-Mid-server-mF31tGVbgY3Tge0OipQEfJz2', [...])
+ 3 VENDORPATH\midtrans\midtrans-php\Midtrans\Snap.php(36): Midtrans\Snap::createTransaction([...])
+ 4 APPPATH\Controllers\User.php(23): Midtrans\Snap::getSnapToken([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\User->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-16 17:18:34 --> CURL Error: Could not resolve host: app.sandbox.midtrans.com
+in VENDORPATH\midtrans\midtrans-php\Midtrans\ApiRequestor.php on line 156.
+ 1 VENDORPATH\midtrans\midtrans-php\Midtrans\ApiRequestor.php(39): Midtrans\ApiRequestor::remoteCall('https://app.sandbox.midtrans.com/snap/v1/transactions', 'SB-Mid-server-mF31tGVbgY3Tge0OipQEfJz2', [...], 'POST')
+ 2 VENDORPATH\midtrans\midtrans-php\Midtrans\Snap.php(109): Midtrans\ApiRequestor::post('https://app.sandbox.midtrans.com/snap/v1/transactions', 'SB-Mid-server-mF31tGVbgY3Tge0OipQEfJz2', [...])
+ 3 VENDORPATH\midtrans\midtrans-php\Midtrans\Snap.php(36): Midtrans\Snap::createTransaction([...])
+ 4 APPPATH\Controllers\User.php(30): Midtrans\Snap::getSnapToken([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\User->Pay()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-16 17:18:39 --> CURL Error: Could not resolve host: app.sandbox.midtrans.com
+in VENDORPATH\midtrans\midtrans-php\Midtrans\ApiRequestor.php on line 156.
+ 1 VENDORPATH\midtrans\midtrans-php\Midtrans\ApiRequestor.php(39): Midtrans\ApiRequestor::remoteCall('https://app.sandbox.midtrans.com/snap/v1/transactions', 'SB-Mid-server-mF31tGVbgY3Tge0OipQEfJz2', [...], 'POST')
+ 2 VENDORPATH\midtrans\midtrans-php\Midtrans\Snap.php(109): Midtrans\ApiRequestor::post('https://app.sandbox.midtrans.com/snap/v1/transactions', 'SB-Mid-server-mF31tGVbgY3Tge0OipQEfJz2', [...])
+ 3 VENDORPATH\midtrans\midtrans-php\Midtrans\Snap.php(36): Midtrans\Snap::createTransaction([...])
+ 4 APPPATH\Controllers\User.php(30): Midtrans\Snap::getSnapToken([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\User->Pay()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-16 17:19:09 --> CURL Error: Could not resolve host: app.sandbox.midtrans.com
+in VENDORPATH\midtrans\midtrans-php\Midtrans\ApiRequestor.php on line 156.
+ 1 VENDORPATH\midtrans\midtrans-php\Midtrans\ApiRequestor.php(39): Midtrans\ApiRequestor::remoteCall('https://app.sandbox.midtrans.com/snap/v1/transactions', 'SB-Mid-server-mF31tGVbgY3Tge0OipQEfJz2', [...], 'POST')
+ 2 VENDORPATH\midtrans\midtrans-php\Midtrans\Snap.php(109): Midtrans\ApiRequestor::post('https://app.sandbox.midtrans.com/snap/v1/transactions', 'SB-Mid-server-mF31tGVbgY3Tge0OipQEfJz2', [...])
+ 3 VENDORPATH\midtrans\midtrans-php\Midtrans\Snap.php(36): Midtrans\Snap::createTransaction([...])
+ 4 APPPATH\Controllers\User.php(30): Midtrans\Snap::getSnapToken([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\User->Pay()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-16 17:20:21 --> CURL Error: Could not resolve host: app.sandbox.midtrans.com
+in VENDORPATH\midtrans\midtrans-php\Midtrans\ApiRequestor.php on line 156.
+ 1 VENDORPATH\midtrans\midtrans-php\Midtrans\ApiRequestor.php(39): Midtrans\ApiRequestor::remoteCall('https://app.sandbox.midtrans.com/snap/v1/transactions', 'SB-Mid-server-mF31tGVbgY3Tge0OipQEfJz2', [...], 'POST')
+ 2 VENDORPATH\midtrans\midtrans-php\Midtrans\Snap.php(109): Midtrans\ApiRequestor::post('https://app.sandbox.midtrans.com/snap/v1/transactions', 'SB-Mid-server-mF31tGVbgY3Tge0OipQEfJz2', [...])
+ 3 VENDORPATH\midtrans\midtrans-php\Midtrans\Snap.php(36): Midtrans\Snap::createTransaction([...])
+ 4 APPPATH\Controllers\User.php(30): Midtrans\Snap::getSnapToken([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\User->Pay()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-16 17:21:47 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\User\index.php on line 480.
+ 1 APPPATH\Views\User\index.php(480): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Views\\User\\index.php', 480)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\User\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('User/index', [], true)
+ 5 APPPATH\Controllers\User.php(24): view('User/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-16 17:21:53 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\User\index.php on line 480.
+ 1 APPPATH\Views\User\index.php(480): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Views\\User\\index.php', 480)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\User\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('User/index', [], true)
+ 5 APPPATH\Controllers\User.php(24): view('User/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-16 17:22:48 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\User\index.php on line 37.
+ 1 APPPATH\Views\User\index.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Views\\User\\index.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\User\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('User/index', [], true)
+ 5 APPPATH\Controllers\User.php(24): view('User/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-16 17:48:53 --> Trying to access array offset on value of type null
+in APPPATH\Views\kategori\formemail.php on line 7.
+ 1 APPPATH\Views\kategori\formemail.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\kategori\\formemail.php', 7)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kategori\\formemail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kategori/formemail', [], true)
+ 5 APPPATH\Controllers\Admin.php(121): view('kategori/formemail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->formemail('hanif')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-16 18:03:09 --> Trying to access array offset on value of type null
+in APPPATH\Views\kategori\formemail.php on line 7.
+ 1 APPPATH\Views\kategori\formemail.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\kategori\\formemail.php', 7)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kategori\\formemail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kategori/formemail', [], true)
+ 5 APPPATH\Controllers\Admin.php(121): view('kategori/formemail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->formemail('hanif')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-07-16 19:20:28 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-07-16 19:20:28 --> 220 smtp.gmail.com ESMTP p10-20020a62ab0a000000b0063b8ddf77f7sm10613444pff.211 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [36.71.82.169]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [36.71.82.169]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK p10-20020a62ab0a000000b0063b8ddf77f7sm10613444pff.211 - gsmtp
+
+to: 555 5.5.2 Syntax error. p10-20020a62ab0a000000b0063b8ddf77f7sm10613444pff.211 - gsmtp
+
+The following SMTP error was encountered: 555 5.5.2 Syntax error. p10-20020a62ab0a000000b0063b8ddf77f7sm10613444pff.211 - gsmtp
+
+quit: 221 2.0.0 closing connection p10-20020a62ab0a000000b0063b8ddf77f7sm10613444pff.211 - gsmtp
+
+CRITICAL - 2023-07-16 19:21:16 --> Trying to access array offset on value of type null
+in APPPATH\Views\kategori\formemail.php on line 7.
+ 1 APPPATH\Views\kategori\formemail.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\kategori\\formemail.php', 7)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kategori\\formemail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kategori/formemail', [], true)
+ 5 APPPATH\Controllers\Admin.php(121): view('kategori/formemail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->formemail('hanif')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-07-16 21:21:00 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-07-16 21:21:00 --> 220 smtp.gmail.com ESMTP y4-20020a170902ed4400b001b8a844b023sm11550800plb.272 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [36.71.83.232]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [36.71.83.232]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK y4-20020a170902ed4400b001b8a844b023sm11550800plb.272 - gsmtp
+
+to: 555 5.5.2 Syntax error. y4-20020a170902ed4400b001b8a844b023sm11550800plb.272 - gsmtp
+
+The following SMTP error was encountered: 555 5.5.2 Syntax error. y4-20020a170902ed4400b001b8a844b023sm11550800plb.272 - gsmtp
+
+quit: 221 2.0.0 closing connection y4-20020a170902ed4400b001b8a844b023sm11550800plb.272 - gsmtp
+
+ERROR - 2023-07-16 21:21:54 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-07-16 21:21:54 --> 220 smtp.gmail.com ESMTP k11-20020aa790cb000000b0064d32771fa8sm10741209pfk.134 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [36.71.83.232]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [36.71.83.232]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK k11-20020aa790cb000000b0064d32771fa8sm10741209pfk.134 - gsmtp
+
+to: 555 5.5.2 Syntax error. k11-20020aa790cb000000b0064d32771fa8sm10741209pfk.134 - gsmtp
+
+The following SMTP error was encountered: 555 5.5.2 Syntax error. k11-20020aa790cb000000b0064d32771fa8sm10741209pfk.134 - gsmtp
+
+quit: 221 2.0.0 closing connection k11-20020aa790cb000000b0064d32771fa8sm10741209pfk.134 - gsmtp
+
+ERROR - 2023-07-16 21:38:21 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\10\Downloads\Bimbel-app\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\Users\10\Downloads\Bimbel-app\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'bimbel', 3306, '', 0)
+#1 C:\Users\10\Downloads\Bimbel-app\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\10\Downloads\Bimbel-app\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\10\Downloads\Bimbel-app\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\10\Downloads\Bimbel-app\system\Model.php(182): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\10\Downloads\Bimbel-app\system\BaseModel.php(524): CodeIgniter\Model->doFind(true, '1')
+#6 C:\Users\10\Downloads\Bimbel-app\vendor\myth\auth\src\Authentication\AuthenticationBase.php(130): CodeIgniter\BaseModel->find('1')
+#7 C:\Users\10\Downloads\Bimbel-app\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+#8 C:\Users\10\Downloads\Bimbel-app\vendor\myth\auth\src\Filters\LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+#9 C:\Users\10\Downloads\Bimbel-app\system\Filters\Filters.php(173): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#10 C:\Users\10\Downloads\Bimbel-app\system\CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('Admin', 'before')
+#11 C:\Users\10\Downloads\Bimbel-app\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\10\Downloads\Bimbel-app\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\10\Downloads\Bimbel-app\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\10\\Dow...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\10\Downloads\Bimbel-app\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\Users\10\Downloads\Bimbel-app\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\10\Downloads\Bimbel-app\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\10\Downloads\Bimbel-app\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\10\Downloads\Bimbel-app\system\Model.php(182): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\10\Downloads\Bimbel-app\system\BaseModel.php(524): CodeIgniter\Model->doFind(true, '1')
+#5 C:\Users\10\Downloads\Bimbel-app\vendor\myth\auth\src\Authentication\AuthenticationBase.php(130): CodeIgniter\BaseModel->find('1')
+#6 C:\Users\10\Downloads\Bimbel-app\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+#7 C:\Users\10\Downloads\Bimbel-app\vendor\myth\auth\src\Filters\LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+#8 C:\Users\10\Downloads\Bimbel-app\system\Filters\Filters.php(173): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#9 C:\Users\10\Downloads\Bimbel-app\system\CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('Admin', 'before')
+#10 C:\Users\10\Downloads\Bimbel-app\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\10\Downloads\Bimbel-app\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\10\Downloads\Bimbel-app\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\10\\Dow...')
+#13 {main}
+CRITICAL - 2023-07-16 21:38:21 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = :users.id:', [...], false)
+ 3 SYSTEMPATH\Model.php(182): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(524): CodeIgniter\Model->doFind(true, '1')
+ 5 VENDORPATH\myth\auth\src\Authentication\AuthenticationBase.php(130): CodeIgniter\BaseModel->find('1')
+ 6 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+ 7 VENDORPATH\myth\auth\src\Filters\LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+ 8 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 9 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('Admin', 'before')
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

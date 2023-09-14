@@ -1,0 +1,159 @@
+CRITICAL - 2023-07-14 05:14:43 --> Trying to access array offset on value of type null
+in APPPATH\Views\kategori\formemail.php on line 3.
+ 1 APPPATH\Views\kategori\formemail.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\kategori\\formemail.php', 3)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kategori\\formemail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kategori/formemail', [], true)
+ 5 APPPATH\Controllers\Admin.php(131): view('kategori/formemail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->formemail('hanif')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-07-14 05:24:46 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\10\Downloads\Bimbel-app\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\Users\10\Downloads\Bimbel-app\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'bimbel', 3306, '', 0)
+#1 C:\Users\10\Downloads\Bimbel-app\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\10\Downloads\Bimbel-app\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\10\Downloads\Bimbel-app\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\10\Downloads\Bimbel-app\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\10\Downloads\Bimbel-app\system\BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 C:\Users\10\Downloads\Bimbel-app\app\Models\ModelBimbel.php(25): CodeIgniter\BaseModel->first()
+#7 C:\Users\10\Downloads\Bimbel-app\app\Controllers\Admin.php(127): App\Models\ModelBimbel->getBuku('hanif')
+#8 C:\Users\10\Downloads\Bimbel-app\system\CodeIgniter.php(927): App\Controllers\Admin->formemail('hanif')
+#9 C:\Users\10\Downloads\Bimbel-app\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\Users\10\Downloads\Bimbel-app\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\10\Downloads\Bimbel-app\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\10\Downloads\Bimbel-app\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\10\\Dow...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\10\Downloads\Bimbel-app\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\Users\10\Downloads\Bimbel-app\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\10\Downloads\Bimbel-app\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\10\Downloads\Bimbel-app\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\10\Downloads\Bimbel-app\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\10\Downloads\Bimbel-app\system\BaseModel.php(623): CodeIgniter\Model->doFirst()
+#5 C:\Users\10\Downloads\Bimbel-app\app\Models\ModelBimbel.php(25): CodeIgniter\BaseModel->first()
+#6 C:\Users\10\Downloads\Bimbel-app\app\Controllers\Admin.php(127): App\Models\ModelBimbel->getBuku('hanif')
+#7 C:\Users\10\Downloads\Bimbel-app\system\CodeIgniter.php(927): App\Controllers\Admin->formemail('hanif')
+#8 C:\Users\10\Downloads\Bimbel-app\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\Users\10\Downloads\Bimbel-app\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\10\Downloads\Bimbel-app\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\10\Downloads\Bimbel-app\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\10\\Dow...')
+#12 {main}
+CRITICAL - 2023-07-14 05:24:46 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `daftar`
+WHERE `alias` = :alias:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\ModelBimbel.php(25): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\Admin.php(127): App\Models\ModelBimbel->getBuku('hanif')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->formemail('hanif')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-14 05:28:03 --> Trying to access array offset on value of type null
+in APPPATH\Views\kategori\formemail.php on line 3.
+ 1 APPPATH\Views\kategori\formemail.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\kategori\\formemail.php', 3)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kategori\\formemail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kategori/formemail', [], true)
+ 5 APPPATH\Controllers\Admin.php(130): view('kategori/formemail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->formemail('hanif')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-14 05:35:13 --> Trying to access array offset on value of type null
+in APPPATH\Views\kategori\formemail.php on line 3.
+ 1 APPPATH\Views\kategori\formemail.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\kategori\\formemail.php', 3)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kategori\\formemail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kategori/formemail', [], true)
+ 5 APPPATH\Controllers\Admin.php(130): view('kategori/formemail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->formemail('hanif')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-14 05:51:33 --> Trying to access array offset on value of type null
+in APPPATH\Views\kategori\formemail.php on line 8.
+ 1 APPPATH\Views\kategori\formemail.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\kategori\\formemail.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kategori\\formemail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kategori/formemail', [], true)
+ 5 APPPATH\Controllers\Admin.php(130): view('kategori/formemail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->formemail('hanif')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-14 06:25:30 --> Trying to access array offset on value of type null
+in APPPATH\Views\kategori\formemail.php on line 8.
+ 1 APPPATH\Views\kategori\formemail.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\kategori\\formemail.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kategori\\formemail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kategori/formemail', [], true)
+ 5 APPPATH\Controllers\Admin.php(130): view('kategori/formemail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->formemail('hanif')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-14 09:28:39 --> Trying to access array offset on value of type null
+in APPPATH\Views\kategori\formemail.php on line 8.
+ 1 APPPATH\Views\kategori\formemail.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\kategori\\formemail.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kategori\\formemail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kategori/formemail', [], true)
+ 5 APPPATH\Controllers\Admin.php(130): view('kategori/formemail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->formemail('hanif')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-07-14 10:02:15 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-07-14 10:02:15 --> 220 smtp.gmail.com ESMTP k12-20020a637b4c000000b0054ff9032e4dsm7507564pgn.18 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [36.71.84.67]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [36.71.84.67]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials k12-20020a637b4c000000b0054ff9032e4dsm7507564pgn.18 - gsmtp
+
+CRITICAL - 2023-07-14 18:10:36 --> Undefined variable $t
+in APPPATH\Views\kategori\viewkategori.php on line 62.
+ 1 APPPATH\Views\kategori\viewkategori.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $t', 'APPPATH\\Views\\kategori\\viewkategori.php', 62)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kategori\\viewkategori.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kategori/viewkategori', [], true)
+ 5 APPPATH\Controllers\Admin.php(36): view('kategori/viewkategori', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
